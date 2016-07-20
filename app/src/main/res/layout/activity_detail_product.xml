@@ -19,6 +19,43 @@
                 android:adjustViewBounds="true"
                 android:id="@+id/img_detail"
                 android:layout_marginBottom="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                android:padding="8dp">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/img_thumb_a"
+                    android:scaleType="centerCrop"
+                    android:background="#cccccc"
+                    android:layout_marginRight="4dp"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/img_thumb_b"
+                    android:scaleType="centerCrop"
+                    android:background="#cccccc"
+                    android:layout_marginRight="4dp"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/img_thumb_c"
+                    android:scaleType="centerCrop"
+                    android:background="#cccccc"
+                    android:layout_marginRight="4dp"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/img_thumb_d"
+                    android:scaleType="centerCrop"
+                    android:background="#cccccc"
+                    android:layout_marginRight="4dp"/>
+            </LinearLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

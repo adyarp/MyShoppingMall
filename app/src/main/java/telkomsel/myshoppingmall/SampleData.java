@@ -12,9 +12,10 @@ public class SampleData {
             {"Born To Be Black n Blue","https://pbs.twimg.com/media/BgRk55xCAAAmm5z.jpg","Rp. 76.000"}
     };
 
-    public static String [][] national = new String[][]{
-            {"Selecao Brazil","https://pbs.twimg.com/media/BrICpVbCcAAfiA1.jpg","Rp. 76.000"},
-            {"England Three Lions","https://pbs.twimg.com/media/BrIDCuHCIAExuMY.jpg","Rp. 76.000"},
-            {"Portugal CR7","https://pbs.twimg.com/media/BrIDPSjCQAEOk24.jpg","Rp. 76.000"}
+    public static String [] thumb = new String[]{
+           "https://pbs.twimg.com/profile_images/431127896506118144/QwwNmJ21_400x400.jpeg",
+            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQti3woLQWGKTB5UP0IdUpiNoCo9is2MabY8YmVcK1ZxRkRj-bM8w",
+            "https://pbs.twimg.com/profile_images/431127896506118144/QwwNmJ21_400x400.jpeg",
+            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQti3woLQWGKTB5UP0IdUpiNoCo9is2MabY8YmVcK1ZxRkRj-bM8w"
     };
 }
