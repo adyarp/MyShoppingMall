@@ -29,7 +29,7 @@ public class ProductActivity extends AppCompatActivity implements AdapterView.On
         adapter.setListItem(listProduct);
 
         Product nProduct=null;
-        for (int i=1; i < SampleData.club.length; i++){
+        for (int i=0; i < SampleData.club.length; i++){
             nProduct = new Product();
             nProduct.setId(System.currentTimeMillis());
             nProduct.setName(SampleData.club[i][0]);

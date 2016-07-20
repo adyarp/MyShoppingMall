@@ -1,5 +1,6 @@
 package telkomsel.myshoppingmall;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -13,6 +14,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.ArrayList;
+
 public class DetailProductActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView imgDetail;
@@ -20,6 +23,8 @@ public class DetailProductActivity extends AppCompatActivity implements View.OnC
     private Button btnAddToCart;
     private Spinner spnSize;
     private ImageView imgThumbA, imgThumbB, imgThumbC, imgThumbD;
+
+    private int currentImagePosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +37,8 @@ public class DetailProductActivity extends AppCompatActivity implements View.OnC
         tvPrice = (TextView)findViewById(R.id.tv_price);
         spnSize = (Spinner) findViewById(R.id.spn_size);
         tvDesc = (TextView)findViewById(R.id.tv_desc);
+
+        imgDetail.setOnClickListener(this);
 
         imgThumbA = (ImageView) findViewById(R.id.img_thumb_a);
         imgThumbB = (ImageView) findViewById(R.id.img_thumb_b);
@@ -90,16 +97,30 @@ public class DetailProductActivity extends AppCompatActivity implements View.OnC
         String imageUrl = null;
         switch (v.getId()){
             case R.id.img_thumb_a:
-                imageUrl = SampleData.thumb[0];
+                imageUrl = SampleData.realImage[0];
+                currentImagePosition=0;
                 break;
             case R.id.img_thumb_b:
-                imageUrl = SampleData.thumb[1];
+                imageUrl = SampleData.realImage[1];
+                currentImagePosition=1;
                 break;
             case R.id.img_thumb_c:
-                imageUrl = SampleData.thumb[2];
+                imageUrl = SampleData.realImage[2];
+                currentImagePosition=2;
                 break;
             case R.id.img_thumb_d:
-                imageUrl = SampleData.thumb[3];
+                imageUrl = SampleData.realImage[3];
+                currentImagePosition=3;
+                break;
+            case R.id.img_detail:
+                ArrayList<String> list = new ArrayList<>();
+                for (int i=0; i < SampleData.realImage.length; i++){
+                    list.add(SampleData.realImage[i]);
+                }
+                Intent nIntent = new Intent(DetailProductActivity.this,DetailImageActivity.class);
+                nIntent.putExtra("url_images",list);
+                nIntent.putExtra("position", currentImagePosition);
+                startActivity(nIntent);
                 break;
             default:
                 imageUrl = null;

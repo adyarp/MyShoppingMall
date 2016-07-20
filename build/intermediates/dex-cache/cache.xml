@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\2.1.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="a2af9c72ccaa4c5c049b500ca6ea664a4ce1f7d4">
+        <dex dex="C:\Users\Multimatics\AndroidStudioProjects\MyShoppingMall\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-2.1.0_0752bf3f4bc9b43c3c14a9a2330dcf200eaf022e.jar" />
+    </item>
+
+</items>
