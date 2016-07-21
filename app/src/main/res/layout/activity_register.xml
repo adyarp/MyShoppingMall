@@ -39,6 +39,7 @@
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/cb_confirm"
             android:text="By clicking Register, I confirm I have agreed to Terms and Condition of Coming From Behind"
             android:layout_marginBottom="16dp"/>
         <Button

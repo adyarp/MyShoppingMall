@@ -10,6 +10,8 @@ public class BaseApi implements BaseApiMethod{
 
     public String GET_ALL_PRODUCTS = BASE_URL + "/products/all";
     public String GET_DETAIL_PRODUCT = BASE_URL + "/products/detail";
+    public String POST_REGISTER = BASE_URL + "/user/register";
+    public String POST_LOGIN = BASE_URL + "/user/login";
 
     public AsyncHttpClient getHttpClient(){
         AsyncHttpClient httpClient = new AsyncHttpClient();

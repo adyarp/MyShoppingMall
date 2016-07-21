@@ -38,7 +38,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             super.onPostExecute(aVoid);
             Intent intent = null;
 
-            if (appPreference.getUsername().equals("")){
+            if (appPreference.getUserId().equals("")){
                 intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
             }
             else{
