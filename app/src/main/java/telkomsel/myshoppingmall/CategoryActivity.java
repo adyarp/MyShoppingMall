@@ -19,7 +19,7 @@ public class CategoryActivity extends AppCompatActivity implements AdapterView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        getSupportActionBar().setTitle("Home");
+        getSupportActionBar().setTitle("Category");
 
         lvCategory = (ListView)findViewById(R.id.lv_category);
         lvCategory.setOnItemClickListener(this);

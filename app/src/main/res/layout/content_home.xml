@@ -11,5 +11,18 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="telkomsel.myshoppingmall.HomeActivity"
     tools:showIn="@layout/app_bar_home">
+    <ProgressBar
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/progressbar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_item"
+        android:cacheColorHint="@android:color/transparent"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        android:scrollbarSize="3dp"></ListView>
 
 </RelativeLayout>
